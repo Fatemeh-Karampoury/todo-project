@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Oswald&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+  color: rgb(193, 35, 207);
+  font-family: "Hind Siliguri", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  border: none;
+  background: white;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+form button {
+  background: white;
+  color: #FF6F47;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #FF6F47;
+  color: white;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+
+}
+
+.todo {
+  margin: 1rem;
+  background: white;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.todo li {
+  flex: 1;
+
+}
+
+.filter-todo {
+  padding: 1rem;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  color: #FF6F47;
+  width: 12rem;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+select {
+  -webkit-apparence: none;
+  -moz--apparence: none;
+  -ms--apparence: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+.select:after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #ff6F47;
+  cursor: pointer ;
+  pointer-events: none;
+}
+
+/**/
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.fall {
+  transform: translateY(10rem) rotate(20dg);
+  opacity: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  color: rgb(193, 35, 207);
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+
+}
+
+.trash-btn,
+.completed-btn {
+  background: #ff6F47;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.completed-btn {
+  background: rgb(11, 212, 162);
+}
